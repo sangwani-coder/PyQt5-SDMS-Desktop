@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>add_class</class>
- <widget class="QWidget" name="add_class">
+ <class>sports</class>
+ <widget class="QWidget" name="sports">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>459</width>
-    <height>322</height>
+    <width>598</width>
+    <height>261</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Create Class</string>
+   <string>sports</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(119, 171, 255);</string>
   </property>
-  <widget class="QGroupBox" name="std_entry_form">
+  <widget class="QGroupBox" name="prt_enrty_form">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>0</y>
-     <width>311</width>
+     <x>120</x>
+     <y>10</y>
+     <width>401</width>
      <height>181</height>
     </rect>
    </property>
@@ -36,23 +36,23 @@
     <string notr="true">background-color: rgb(119, 171, 255);</string>
    </property>
    <property name="title">
-    <string>Class details</string>
+    <string>Create houses</string>
    </property>
-   <widget class="QWidget" name="formLayoutWidget">
+   <widget class="QWidget" name="formLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>30</y>
-      <width>301</width>
-      <height>150</height>
+      <width>361</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(119, 171, 255);</string>
     </property>
-    <layout class="QFormLayout" name="formLayout">
+    <layout class="QFormLayout" name="formLayout_2">
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_12">
        <property name="font">
         <font>
          <family>MS Serif</family>
@@ -65,19 +65,19 @@
         <string notr="true">background-color: rgb(119, 171, 255);</string>
        </property>
        <property name="text">
-        <string>Class name:</string>
+        <string>House name:</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="lineEdit_8">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="label_13">
        <property name="font">
         <font>
          <family>MS Serif</family>
@@ -90,19 +90,19 @@
         <string notr="true">background-color: rgb(119, 171, 255);</string>
        </property>
        <property name="text">
-        <string>Block number:</string>
+        <string>House colors:</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="lineEdit_9">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="label_5">
+      <widget class="QLabel" name="label_14">
        <property name="font">
         <font>
          <family>MS Serif</family>
@@ -115,87 +115,66 @@
         <string notr="true">background-color: rgb(119, 171, 255);</string>
        </property>
        <property name="text">
-        <string>Room Number:</string>
+        <string>House Master:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <family>MS Serif</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(119, 171, 255);</string>
+       </property>
+       <property name="text">
+        <string>Practice days:</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QComboBox" name="comboBox">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_6">
+      <widget class="QComboBox" name="comboBox_2">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
+       <item>
+        <property name="text">
+         <string>Monday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tuesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wednesday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thursday</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Friday</string>
+        </property>
+       </item>
       </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <family>MS Serif</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(119, 171, 255);</string>
-       </property>
-       <property name="text">
-        <string>Class Teacher:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QComboBox" name="comboBox">
-       <property name="styleSheet">
-        <string notr="true">background-color: white;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_6">
-       <property name="font">
-        <font>
-         <family>MS Serif</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(119, 171, 255);</string>
-       </property>
-       <property name="text">
-        <string>Grade:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <family>MS Serif</family>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(119, 171, 255);</string>
-       </property>
-       <property name="text">
-        <string>School Fees:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
      </item>
     </layout>
    </widget>
@@ -204,9 +183,9 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>220</y>
-     <width>391</width>
-     <height>80</height>
+     <y>200</y>
+     <width>551</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -221,37 +200,48 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>0</y>
-      <width>361</width>
-      <height>80</height>
+      <width>481</width>
+      <height>51</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="pushButton_3">
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(125, 205, 127);</string>
        </property>
        <property name="text">
-        <string>Create Class</string>
+        <string>Create house</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="pushButton_4">
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(125, 205, 127);</string>
+       </property>
+       <property name="text">
+        <string>Generate house list</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="styleSheet">

@@ -36,7 +36,7 @@
     <string notr="true">background-color: rgb(119, 171, 255);</string>
    </property>
    <property name="title">
-    <string>Student Details</string>
+    <string>Manage student info</string>
    </property>
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
@@ -420,6 +420,23 @@
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(125, 205, 127);</string>
+       </property>
+       <property name="text">
+        <string>Upload csv</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="pushButton_3">
        <property name="font">
