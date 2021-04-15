@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Student Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(119, 171, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_Term">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>0</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(119, 171, 255);</string>
+    </property>
+    <property name="text">
+     <string>Term: </string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>161</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS PGothic</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(119, 171, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>161</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="dsp_All_Butoon">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(125, 205, 127);
+</string>
+        </property>
+        <property name="text">
+         <string>Display All</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dsp_owe_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Display Owing</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dsp_full_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Display Fully paid</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="new_std_Button_2">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Upload list of students</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="new_std_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Add New student</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_tr_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Add Teacher(s)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="create_class_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Create Class</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="create_list_button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Create A Class List</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rmv_std_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Remove Student</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rmv_tr_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Remove Teachers</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delete_class_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Delete Class</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit_Button_2">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Log out</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit_Button">
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(125, 205, 127);
+selection-background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>791</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Std ID</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>181</red>
+       <green>181</green>
+       <blue>181</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Firstname</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Surname</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DoB</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Gender</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Class</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Address</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Mobile</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Account status</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Select Term/Year</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Term_combo_box">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Term 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Term 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Term 3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="year_combo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>2021</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2022</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2023</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>885</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuManage_Accounts">
+     <property name="title">
+      <string>Manage Accounts</string>
+     </property>
+     <addaction name="actionAdd"/>
+     <addaction name="separator"/>
+     <addaction name="actionUpdate"/>
+     <addaction name="separator"/>
+     <addaction name="actionRemove"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuManage_Classrooms">
+     <property name="title">
+      <string>Manage Classrooms</string>
+     </property>
+     <addaction name="actionCreate_New_Class"/>
+     <addaction name="separator"/>
+     <addaction name="actionAdd_Student"/>
+     <addaction name="separator"/>
+     <addaction name="actionAdd_Teacher_s"/>
+     <addaction name="separator"/>
+     <addaction name="actionDisplay"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuManage_Accounts"/>
+    <addaction name="separator"/>
+    <addaction name="menuManage_Classrooms"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_user"/>
+    <addaction name="separator"/>
+    <addaction name="actionLogout"/>
+    <addaction name="separator"/>
+    <addaction name="actionChange_password"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menuSchool_Term">
+    <property name="title">
+     <string>School Term</string>
+    </property>
+    <addaction name="actionTerm_1"/>
+    <addaction name="separator"/>
+    <addaction name="actionTerm_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionTerm_3"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuOther">
+    <property name="title">
+     <string>Other</string>
+    </property>
+    <addaction name="actionCreate_sports_houses"/>
+    <addaction name="separator"/>
+    <addaction name="actionGeneratesports_house_list"/>
+    <addaction name="separator"/>
+    <addaction name="actionBackup_database"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuSchool_Term"/>
+   <addaction name="menuOther"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_Close">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAdd_user">
+   <property name="text">
+    <string>Add user</string>
+   </property>
+  </action>
+  <action name="actionTerm_1">
+   <property name="text">
+    <string>Term 1</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionTerm_2">
+   <property name="text">
+    <string>Term 2</string>
+   </property>
+  </action>
+  <action name="actionTerm_3">
+   <property name="text">
+    <string>Term 3</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student">
+   <property name="text">
+    <string>Add/Remove Student(s)</string>
+   </property>
+  </action>
+  <action name="actionRemove_Student">
+   <property name="text">
+    <string>Remove Student</string>
+   </property>
+  </action>
+  <action name="actionAdd_Teacher_s">
+   <property name="text">
+    <string>Add/Remove Teacher(s)</string>
+   </property>
+  </action>
+  <action name="actionDisplay">
+   <property name="text">
+    <string>Display</string>
+   </property>
+  </action>
+  <action name="actionCreate_New_Class">
+   <property name="text">
+    <string>Create/Remove Class</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionGeneratesports_house_list">
+   <property name="text">
+    <string>Generate a sports house list</string>
+   </property>
+  </action>
+  <action name="actionCreate_sports_houses">
+   <property name="text">
+    <string>Create sports houses</string>
+   </property>
+  </action>
+  <action name="actionChange_password">
+   <property name="text">
+    <string>Change password</string>
+   </property>
+  </action>
+  <action name="actionBackup_database">
+   <property name="text">
+    <string>Backup database</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
